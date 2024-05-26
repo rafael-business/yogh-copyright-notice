@@ -1,0 +1,42 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Yogh Copyright Notice\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-26 23:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.9; wp-6.5.3\n"
+"X-Domain: yogh-copyright-notice"
+
+#. Author URI of the plugin
+msgid "https://www.yogh.com.br/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://www.yogh.com.br/plugins/yogh-copyright-notice/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Shows a Copyright notice at the end of Blog posts."
+msgstr ""
+
+#: src/Notice.php:20
+#, php-format
+msgid "This content is created by: %s (%s)"
+msgstr ""
+
+#. Name of the plugin
+msgid "Yogh Copyright Notice"
+msgstr ""
+
+#. Author of the plugin
+msgid "Yogh Solutions"
+msgstr ""
