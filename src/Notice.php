@@ -12,6 +12,10 @@ class Notice {
    }
 
    public function display_copyright_notice ( $content ) {
+      if ( !is_singular('post') ) {
+         return $content;
+      }
+      
       $notice_html  = "<p>";
       $notice_html .= "<strong>";
       $notice_html .= $this->notice;
