@@ -18,7 +18,15 @@ if ( ! defined( 'ABSPATH' ) ) {
     die( 'not allowed' );
 }
 
-// Translating
+// Require the autoload file.
+require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+
+// Use the Notice class from the namespace.
+use Yogh\Copyright\Notice;
+
+/**
+ * Load the plugin textdomain for translation.
+ */
 function translate_plugin() {
     load_plugin_textdomain(
         'yogh-copyright-notice',
@@ -26,17 +34,13 @@ function translate_plugin() {
         dirname( plugin_basename( __FILE__ ) ) . '/languages/'
     );
 }
-
 add_action( 'init', 'translate_plugin' );
 
 /**
- * Instantiation of Copyright Notice Class and
- * Plugin initialization.
+ * Initialize the plugin by instantiating the main class.
  */
-require_once plugin_dir_path( __FILE__ ) . '/vendor/autoload.php';
-use Yogh\Copyright\Notice;
-
 function init_yogh_copyright_notice_plugin() {
+    // Instantiate and initialize the plugin.
     $plugin = new Notice();
     $plugin->init();
 }
