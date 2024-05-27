@@ -9,6 +9,7 @@
  * Text Domain:     yogh-copyright-notice
  * Domain Path:     /languages
  * Version:         1.0.0
+ * License:         GPL-2.0
  *
  * @package         Yogh_Copyright_Notice
  */
