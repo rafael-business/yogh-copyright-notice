@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name:     Yogh Copyright Notice
  * Plugin URI:      https://www.yogh.com.br/plugins/yogh-copyright-notice/
@@ -15,20 +14,20 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined('ABSPATH') ) {
-    die('not allowed');
+if ( ! defined( 'ABSPATH' ) ) {
+    die( 'not allowed' );
 }
 
 // Translating
 function translate_plugin() {
     load_plugin_textdomain(
-        "yogh-copyright-notice",
+        'yogh-copyright-notice',
         false,
-        dirname(plugin_basename(__FILE__)) . "/languages/"
+        dirname( plugin_basename( __FILE__ ) ) . '/languages/'
     );
 }
 
-add_action('init','translate_plugin');
+add_action( 'init', 'translate_plugin' );
 
 /**
  * Instantiation of Copyright Notice Class and
@@ -41,4 +40,4 @@ function init_yogh_copyright_notice_plugin() {
     $plugin = new Notice();
     $plugin->init();
 }
-add_action('init','init_yogh_copyright_notice_plugin');
+add_action( 'init', 'init_yogh_copyright_notice_plugin' );
