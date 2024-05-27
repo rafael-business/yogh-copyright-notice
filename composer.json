@@ -1,0 +1,18 @@
+{
+    "name": "yogh/yogh-copyright-notice",
+    "description": "Shows a Copyright notice at the end of Blog posts.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0",
+    "autoload": {
+        "psr-4": {
+            "Yogh\\Copyright\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yogh Soluções",
+            "email": "contato@yogh.com.br"
+        }
+    ],
+    "require": {}
+}
